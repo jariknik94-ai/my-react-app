@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import dayjs from "dayjs";
+import axios from "axios";
 
 function App() {
+  // Получаем текущее время
+  const now = dayjs().format("YYYY-MM-DD HH:mm:ss");
+
+  // Делаем тестовый запрос к API
+  axios.get("https://jsonplaceholder.typicode.com/posts/1")
+    .then(response => {
+      console.log("Данные с API:", response.data);
+    })
+    .catch(error => {
+      console.error("Ошибка:", error);
+    });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: "20px" }}>
+      <h1>React работает 🚀</h1>
+      <p>Текущее время: {now}</p>
+      <p>Открой консоль (F12), чтобы увидеть данные с API</p>
     </div>
   );
 }
