@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+/* Центрируем всё приложение */
+.app-container {
+  display: flex;              /* flex-расположение */
+  align-items: center;        /* по вертикали по центру */
+  justify-content: center;    /* по горизонтали по центру */
+  height: 100vh;              /* на весь экран */
+  background-color: #f4f4f4;  /* светлый фон */
+}

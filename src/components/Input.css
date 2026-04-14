@@ -1,0 +1,9 @@
+/* Стиль поля ввода */
+.custom-input {
+  width: 300px;        /* ширина */
+  padding: 10px;       /* внутренние отступы */
+  font-size: 16px;     /* размер текста */
+  border: 1px solid #ccc; /* серая рамка */
+  border-radius: 5px;  /* скругление */
+  margin-right: 10px;  /* отступ справа */
+}

@@ -1,0 +1,15 @@
+/* Основной стиль кнопки */
+.custom-button {
+  background-color: #4caf50; /* зелёный фон */
+  color: white;              /* белый текст */
+  border: none;              /* убираем рамку */
+  padding: 10px 20px;       /* отступы внутри */
+  font-size: 16px;          /* размер текста */
+  cursor: pointer;          /* курсор "рука" */
+  border-radius: 5px;       /* скругление углов */
+}
+
+/* Эффект при наведении */
+.custom-button:hover {
+  background-color: #45a049;
+}
